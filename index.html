@@ -6,91 +6,110 @@
   <meta name="description" content="Zihe Wang, Tenured Associate Professor at the Gaoling School of Artificial Intelligence, Renmin University of China. Research in algorithmic game theory, mechanism design, and auctions.">
   <title>Zihe Wang</title>
   <style>
-    :root {
-      color-scheme: light;
-      font-family: Georgia, "Times New Roman", serif;
-      color: #242424;
-      background: #fff;
-      font-size: 17px;
-      line-height: 1.65;
-    }
+    :root { color-scheme: light; color: #292929; background: #fff; font-family: Georgia, "Times New Roman", serif; font-size: 16px; line-height: 1.6; }
     * { box-sizing: border-box; }
     body { margin: 0; }
-    main {
-      width: min(760px, calc(100% - 48px));
-      margin: 72px auto 80px;
-    }
-    a {
-      color: #245681;
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-    a:hover { color: #163650; }
-    a:focus-visible { outline: 2px solid #245681; outline-offset: 4px; }
-    .skip { position: absolute; left: 24px; top: -80px; background: #fff; }
-    .skip:focus { top: 12px; }
-    h1, h2 { line-height: 1.25; }
-    h1 { margin: 0 0 17px; font-size: 40px; font-weight: 600; }
-    h2 {
-      margin: 0 0 18px;
-      padding-bottom: 9px;
-      border-bottom: 1px solid #dedede;
-      font-size: 24px;
-      font-weight: 600;
-    }
-    p { margin: 0; }
-    .affiliation { line-height: 1.65; }
-    .contact { margin-top: 16px; }
-    .contact a { overflow-wrap: anywhere; }
-    .profile-links { display: flex; flex-wrap: wrap; gap: 6px 21px; margin-top: 7px; }
-    section { margin-top: 41px; }
-    .publication-note { margin-bottom: 22px; }
-    .publications { margin: 0; padding-left: 24px; }
-    .publications li { padding-left: 5px; }
-    .publications li + li { margin-top: 25px; }
+    a { color: #285f90; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid #285f90; outline-offset: 4px; }
+    .skip { position: absolute; left: 20px; top: -80px; padding: 8px 12px; background: #fff; z-index: 2; }
+    .skip:focus { top: 8px; }
+    .topbar { border-bottom: 1px solid #e6e6e6; }
+    .navigation { max-width: 1060px; padding: 17px 30px; margin: 0 auto; display: flex; align-items: center; gap: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+    .site-name { color: #222; font-size: 17px; font-weight: 600; margin-right: auto; white-space: nowrap; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+    .nav-links a { color: #4b4b4b; }
+    .layout { max-width: 1060px; padding: 0 30px; margin: 48px auto 80px; display: grid; grid-template-columns: 210px minmax(0, 1fr); column-gap: 62px; align-items: start; }
+    .profile h1 { margin: 0 0 15px; font-size: 30px; line-height: 1.2; font-weight: 600; }
+    .profile p { margin: 0 0 15px; font-size: 15px; line-height: 1.65; }
+    .profile .role { margin-bottom: 6px; }
+    .profile .contact { margin-top: 23px; }
+    .profile .contact a { overflow-wrap: anywhere; }
+    .profile .faculty-link { font-size: 14px; }
+    main { min-width: 0; }
+    section { margin: 0 0 40px; scroll-margin-top: 24px; }
+    section:last-child { margin-bottom: 0; }
+    h2 { margin: 0 0 15px; padding-bottom: 7px; border-bottom: 1px solid #e3e3e3; font-size: 23px; line-height: 1.35; font-weight: 500; }
+    p { margin: 0 0 14px; }
+    .publications { margin: 0; padding-left: 23px; }
+    .publications li { padding-left: 3px; }
+    .publications li + li { margin-top: 17px; }
     .paper-title { font-weight: 600; }
-    .authors { margin-top: 4px; }
-    .venue { color: #555; }
-    @media (max-width: 600px) {
-      :root { font-size: 16px; }
-      main { width: calc(100% - 40px); margin-top: 36px; margin-bottom: 48px; }
-      h1 { font-size: 34px; }
-      h2 { font-size: 23px; }
-      section { margin-top: 32px; }
-      .publications { padding-left: 20px; }
-      .publications li { padding-left: 3px; }
+    .authors { margin: 2px 0 0; color: #555; font-size: 15px; line-height: 1.55; }
+    .experience { margin: 0; }
+    .experience dt { margin: 0 0 3px; font-weight: 600; }
+    .experience dd { margin: 0 0 19px; }
+    .experience dd:last-child { margin-bottom: 0; }
+    .dates { display: block; color: #666; font-size: 14px; }
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 180px minmax(0, 1fr); gap: 32px; padding: 0 24px; }
+      .navigation { padding-left: 24px; padding-right: 24px; }
+      .nav-links { gap: 8px 18px; }
+      .profile h1 { font-size: 28px; }
+    }
+    @media (max-width: 620px) {
+      .navigation { padding: 14px 20px; gap: 12px; flex-wrap: wrap; }
+      .site-name { width: 100%; }
+      .nav-links { gap: 8px 21px; font-size: 13px; }
+      .layout { display: block; padding: 0 22px; margin-top: 32px; margin-bottom: 48px; }
+      .profile { padding-bottom: 25px; margin-bottom: 28px; border-bottom: 1px solid #e3e3e3; }
+      .profile h1 { font-size: 31px; }
+      .profile .contact { margin-top: 17px; margin-bottom: 6px; }
+      .profile .faculty-link { margin-bottom: 0; }
+      h2 { font-size: 22px; }
+      section { margin-bottom: 34px; }
+      .publications { padding-left: 21px; }
     }
     @media print {
-      main { width: 100%; margin: 0; }
-      a { color: inherit; text-decoration: none; }
-      .skip { display: none; }
-      .publications li { break-inside: avoid; }
+      .topbar, .skip { display: none; }
+      .layout { display: block; max-width: none; margin: 0; padding: 0; }
+      .profile { margin-bottom: 30px; }
+      a { color: inherit; }
+      .publications li, .experience dd { break-inside: avoid; }
     }
   </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <main id="main">
-    <header>
-      <h1>Zihe Wang</h1>
-      <p class="affiliation">
-        Tenured Associate Professor<br>
-        Gaoling School of Artificial Intelligence<br>
-        Renmin University of China
-      </p>
-      <p class="contact">Email: <a href="mailto:wang.zihe@ruc.edu.cn">wang.zihe@ruc.edu.cn</a></p>
-      <div class="profile-links">
-        <a href="https://ai.ruc.edu.cn/szdw/zrjs/wzh/index.htm">Faculty profile</a>
+  <header class="topbar">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="site-name" href="#about">Zihe Wang</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#students">Students</a>
+        <a href="#experience">Experience</a>
       </div>
-    </header>
-
-    <section aria-labelledby="research-title">
-      <h2 id="research-title">Research</h2>
-      <p>My research interests include algorithmic game theory, mechanism design, and auctions.</p>
-    </section>
-
-    <section aria-labelledby="publications-title">
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="profile" aria-label="Profile and contact">
+      <h1>Zihe Wang</h1>
+      <p class="role">Tenured Associate Professor</p>
+      <p>Gaoling School of Artificial Intelligence<br>Renmin University of China</p>
+      <p class="contact">Email:<br><a href="mailto:wang.zihe@ruc.edu.cn">wang.zihe@ruc.edu.cn</a></p>
+      <p class="faculty-link"><a href="https://ai.ruc.edu.cn/szdw/zrjs/wzh/index.htm">Faculty profile</a></p>
+    </aside>
+    <main id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>I am a tenured associate professor at the Gaoling School of Artificial Intelligence, Renmin University of China.</p>
+        <p>My research interests include algorithmic game theory, mechanism design, and auctions.</p>
+      </section>
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+        <dl class="experience">
+          <dt>Renmin University of China <span class="dates">August 2020 – Present</span></dt>
+          <dd>Associate Professor<br>Gaoling School of Artificial Intelligence</dd>
+          <dt>Shanghai University of Finance and Economics <span class="dates">July 2016 – July 2020</span></dt>
+          <dd>Assistant Professor<br>School of Information Management and Engineering</dd>
+        </dl>
+      </section>
+      <section id="students" aria-labelledby="students-title">
+        <h2 id="students-title">Students</h2>
+        <p>Student information to be added.</p>
+      </section>
+      <section id="publications" aria-labelledby="publications-title">
       <h2 id="publications-title">Selected Publications</h2>
       <ol class="publications">
         <li><span class="paper-title">Private Private Information in Second-Price Auction. EC-26</span><p class="authors">Boyu Liu, Wei Tang, Zihe Wang, Shuo Zhang</p></li>
@@ -102,7 +121,7 @@
         <li><span class="paper-title">Optimal Mechanisms with Simple Menus</span><p class="authors">Pingzhong Tang, Zihe Wang. EC-2014.</p></li>
       </ol>
     </section>
-    <section aria-labelledby="all-publications-title">
+      <section id="full-publications" aria-labelledby="all-publications-title">
       <h2 id="all-publications-title">Full Publication List</h2>
       <ol class="publications">
         <li><span class="paper-title">Mechanism Design via Market-Clearing Prices for Value Maximizers under Budget and RoS Constraints</span><p class="authors">Xiaodong Liu, Weiran Shen, Zihe Wang. WINE-26</p></li>
@@ -156,6 +175,7 @@
         <li><span class="paper-title">Optimal Mechanisms with Simple Menus</span><p class="authors">Pingzhong Tang, Zihe Wang. EC-2014.</p></li>
       </ol>
     </section>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
