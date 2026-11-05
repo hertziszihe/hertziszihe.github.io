@@ -19,13 +19,16 @@
     .site-name { color: #222; font-size: 17px; font-weight: 600; margin-right: auto; white-space: nowrap; }
     .nav-links { display: flex; flex-wrap: wrap; gap: 10px 26px; }
     .nav-links a { color: #4b4b4b; }
-    .layout { max-width: 1060px; padding: 0 30px; margin: 48px auto 80px; display: grid; grid-template-columns: 210px minmax(0, 1fr); column-gap: 62px; align-items: start; }
+    .layout { max-width: 1060px; padding: 0 30px; margin: 48px auto 80px; display: grid; grid-template-columns: 245px minmax(0, 1fr); column-gap: 48px; align-items: start; }
     .profile h1 { margin: 0 0 15px; font-size: 30px; line-height: 1.2; font-weight: 600; }
     .profile p { margin: 0 0 15px; font-size: 15px; line-height: 1.65; }
     .profile .role { margin-bottom: 6px; }
     .profile .contact { margin-top: 23px; }
     .profile .contact a { overflow-wrap: anywhere; }
     .profile .faculty-link { font-size: 14px; }
+    .profile #experience { margin-top: 32px; font-size: 14px; line-height: 1.5; }
+    .profile #experience h2 { font-size: 19px; }
+    .profile .experience dd { margin-bottom: 15px; }
     main { min-width: 0; }
     section { margin: 0 0 40px; scroll-margin-top: 24px; }
     section:last-child { margin-bottom: 0; }
@@ -91,18 +94,7 @@
       <p>Gaoling School of Artificial Intelligence<br>Renmin University of China</p>
       <p class="contact">Email:<br><a href="mailto:wang.zihe@ruc.edu.cn">wang.zihe@ruc.edu.cn</a></p>
       <p class="faculty-link"><a href="https://ai.ruc.edu.cn/szdw/zrjs/wzh/index.htm">Faculty profile</a></p>
-    </aside>
-    <main id="main">
-      <section id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
-        <p>I am a tenured associate professor at the Gaoling School of Artificial Intelligence, Renmin University of China. I studied in the Experimental Class of Computer Science at Tsinghua University and received my Ph.D. from Tsinghua University in 2016, advised by Pingzhong Tang and Andrew Chi-Chih Yao.</p>
-        <p>My research interests include:</p>
-        <ol>
-          <li><strong>AI for science:</strong> Using AI to explore scientific questions, including algorithms and approximation algorithms, auction theory, and information design, with a focus on computational and game-theoretic problems in scientific research.</li>
-          <li><strong>The economics of AI:</strong> Studying emerging economic issues in the age of AI, including data trading, online advertising auctions, and new advertising models.</li>
-        </ol>
-      </section>
-      <section id="experience" aria-labelledby="experience-title">
+    <section id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Experience</h2>
         <dl class="experience">
           <dt>Renmin University of China <span class="dates">2026 – Present</span></dt>
@@ -117,6 +109,18 @@
           <dd>Bachelor's degree<br>Institute for Interdisciplinary Information Sciences</dd>
         </dl>
       </section>
+    </aside>
+    <main id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>I am a tenured associate professor at the Gaoling School of Artificial Intelligence, Renmin University of China. I studied in the Experimental Class of Computer Science at Tsinghua University and received my Ph.D. from Tsinghua University in 2016, advised by Pingzhong Tang and Andrew Chi-Chih Yao.</p>
+        <p>My research interests include:</p>
+        <ol>
+          <li><strong>AI for science:</strong> Using AI to explore scientific questions, including algorithms and approximation algorithms, auction theory, and information design, with a focus on computational and game-theoretic problems in scientific research.</li>
+          <li><strong>The economics of AI:</strong> Studying emerging economic issues in the age of AI, including data trading, online advertising auctions, and new advertising models.</li>
+        </ol>
+      </section>
+      
       <section id="students" aria-labelledby="students-title">
         <h2 id="students-title">Students</h2>
         <ul>
