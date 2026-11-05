@@ -67,7 +67,7 @@
       a { color: inherit; }
       .publications li, .experience dd { break-inside: avoid; }
     }
-  </style>
+  .full-list summary { cursor: pointer; font-size: 1.35rem; padding: 0.3em 0; }\n.full-list summary:focus-visible { outline: 2px solid #254c70; outline-offset: 4px; }\n  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -131,7 +131,8 @@
       </ol>
     </section>
       <section id="full-publications" aria-labelledby="all-publications-title">
-      <h2 id="all-publications-title">Full Publication List</h2>
+      <details class="full-list">
+        <summary id="all-publications-title">Full Publication List</summary>
       <ol class="publications">
         <li><span class="paper-title">Mechanism Design via Market-Clearing Prices for Value Maximizers under Budget and RoS Constraints</span><p class="authors">Xiaodong Liu, Weiran Shen, Zihe Wang. WINE-26</p></li>
         <li><span class="paper-title">Prices as Signals: Joint Design of Information and Pricing</span><p class="authors">Zhicheng Du, Yanwei Sun, Zihe Wang, Jiahua Wu. WINE-26</p></li>
@@ -183,6 +184,7 @@
         <li><span class="paper-title">Optimal Auctions for Partially Rational Bidders.</span><p class="authors">Zihe Wang, Pingzhong Tang. IJCAI-2015.</p></li>
         <li><span class="paper-title">Optimal Mechanisms with Simple Menus</span><p class="authors">Pingzhong Tang, Zihe Wang. EC-2014.</p></li>
       </ol>
+      </details>
     </section>
     </main>
   </div>
